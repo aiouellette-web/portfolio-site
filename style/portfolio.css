@@ -38,8 +38,9 @@ a {
   text-decoration: none;
 }
 
-nav li:hover {
+nav a:hover {
   background-color: red;
+  padding: 5px;
 }
 
 img {
