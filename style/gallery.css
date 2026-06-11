@@ -54,3 +54,10 @@
     padding: 5px;
     margin: 5px;
 }
+
+@media screen and (max-width: 600px) {
+    .pure-u-1-4, .pure-u-1-2 {
+        width: 95%;
+        margin: auto;
+    }
+}
