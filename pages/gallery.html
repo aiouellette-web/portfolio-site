@@ -4,7 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aly's Portfolio</title>
-        <link href="../style/portfolio.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Chango&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+        <link href="../style/homepage.css" rel="stylesheet">
+        <link href="../style/gallery.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -16,146 +21,256 @@
                 </ul>
             </nav>
         </header>
-
-        <!-- Portfolio Gallery Grid -->
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/Natsuko.jpg" alt="digital render">
-                    <h3>Natsuko</h3>
+        <main>
+            <section class="pure-g">
+                <div class="pure-u-1-2">
+                    <div class="gallery-item">
+                        <img
+                            src="../images/passion-project/Festival.jpg"
+                            alt="Festival"
+                            class="gallery-image"
+                            onclick="openLightbox('../images/passion-project/Festival.jpg', 'Festival')">
+                        <h3>Festival</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/Ashika.jpg" alt="digital render">
-                    <h3>Ashika</h3>
+                <div class="pure-u-1-2">
+                    <div class="gallery-item">
+                        <img
+                            src="../images/passion-project/bunny.jpg"
+                            alt="Bunny"
+                            class="gallery-image"
+                            onclick="openLightbox('../images/passion-project/bunny.jpg', 'Bunny')">
+			            <h3>Bunny</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/Yaxwch.jpg" alt="digital render">
-                    <h3>Yáxwch</h3>
+            </section>
+            <section class="pure-g">
+                <div class="pure-u-1-4">
+                    <div class="gallery-item">
+                        <img
+                            src="../images/passion-project/Natsuko.jpg"
+                            alt="Natsuko"
+                            class="gallery-image"
+                            onclick="openLightbox('../images/passion-project/Natsuko.jpg', 'Natsuko')">
+                        <h3>Natsuko</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/Eagle.jpg" alt="digital render">
-                    <h3>Eagle</h3>
+                <div class="pure-u-1-4">
+                    <div class="gallery-item">
+                        <img
+                            src="../images/passion-project/Yaxwch.jpg"
+                            alt="Yáxwch"
+                            class="gallery-image"
+                            onclick="openLightbox('../images/passion-project/Yaxwch.jpg', 'Yáxwch')">
+                        <h3>Yáxwch</h3>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/Festival.jpg" alt="digital render">
-                    <h3>Festival</h3>
+                <div class="pure-u-1-4">
+                    <div class="gallery-item">
+                        <img
+                            src="../images/passion-project/Ashika.jpg"
+                            alt="Ashika"
+                            class="gallery-image"
+                            onclick="openLightbox('../images/passion-project/Ashika.jpg', 'Ashika')">
+                        <h3>Ashika</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/casual-sketches1.jpg" alt="sketchbook page">
-                    <h3>Casual Outits Page 1</h3>
+                <div class="pure-u-1-4">
+                    <div class="gallery-item">
+                        <img
+                            src="../images/passion-project/Eagle.jpg"
+                            alt="Eagle"
+                            class="gallery-image"
+                            onclick="openLightbox('../images/passion-project/Eagle.jpg', 'Eagle')">
+                        <h3>Eagle</h3>
+                    </div>
                 </div>
+            </section>
+            <section class="pure-g">
+                <div class="pure-u-1-4">
+                    <div class="gallery-item">
+                        <img
+                            src="../images/passion-project/casual-sketches1.jpg"
+                            alt="Casual Sketches 1"
+                            class="gallery-image"
+                            onclick="openLightbox('../images/passion-project/casual-sketches1.jpg', 'Casual Sketches 1')">
+			            <h3>Casual Sketches 1</h3>
+                    </div>
             </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/casual-sketches2.jpg" alt="sketchbook page">
-                    <h3>Casual Outits Page 2</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/casual-sketches3.jpg" alt="sketchbook page">
-                    <h3>Casual Outits Page 3</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/nail-bat.jpg" alt="sketchbook page">
-                    <h3>Elizabeth's Bat</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/funeral.jpg" alt="sketchbook page">
-                    <h3>Funeral Attire</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/bedtime.jpg" alt="sketchbook page">
-                    <h3>Bedtime</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/weaponry.jpg" alt="sketchbook page">
-                    <h3>Armed and Adorable</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/young-trio.jpg" alt="sketchbook page">
-                    <h3>Childhood Friends</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/passion-project/bunny.jpg" alt="sketchbook page">
-                    <h3>Bunny</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/school/addams-family.jpg" alt="mixed media drawing">
-                    <h3>Addams Family Panel Recreation</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/school/paper-plane.jpg" alt="paper plane infographic">
-                    <h3>Paper Plane Infographic</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img src="../images/school/penguin.jpg" alt="cartoon penguin and orca">
-                    <h3>Playful Orca</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/school/type-anatomy.jpg" alt="typography chart">
-                    <h3>Anatomy of Type</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/school/hospital-horse.jpg" alt="composite image">
-                    <h3>Horse in a Hospital</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="../images/school/croissant-box.jpg" alt="packaging">
-                    <h3>Mini Croissant Packaging</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <img src="../images/school/trifold.jpg" alt="trifold brochure">
-                    <h3>Tri-fold Brochure</h3>
-                </div>
-            </div>
-        </div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/passion-project/casual-sketches2.jpg"
+					   alt="Casual Sketches 2"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/passion-project/casual-sketches2.jpg', 'Casual Sketches 2')">
+					<h3>Casual Sketches 2</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/passion-project/casual-sketches3.jpg"
+					   alt="Casual Sketches 3"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/passion-project/casual-sketches3.jpg', 'Casual Sketches 3')">
+					<h3>Casual Sketches 3</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/passion-project/funeral.jpg"
+					   alt="Funeral Attire"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/passion-project/funeral.jpg', 'Funeral Attire')">
+					<h3>Funeral Attire</h3>
+				</div>
+			</div>
+            </section>
+            <section class="pure-g">
+                <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/passion-project/nail-bat.jpg"
+					   alt="Elizabeth's Bat"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/passion-project/nail-bat.jpg', 'Elizabeth’s Bat')">
+					<h3>Elizabeth's Bat</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/passion-project/bedtime.jpg"
+					   alt="Bedtime"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/passion-project/bedtime.jpg', 'Bedtime')">
+					<h3>Bedtime</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/passion-project/weaponry.jpg"
+					   alt="Armed and Adorable"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/passion-project/weaponry.jpg', 'Armed and Adorable')">
+					<h3>Armed and Adorable</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/passion-project/young-trio.jpg"
+					   alt="Childhood Friends"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/passion-project/young-trio.jpg', 'Childhood Friends')">
+					<h3>Childhood Friends</h3>
+				</div>
+			</div>
+            </section>
+            <section class="pure-g">
+                <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/school/addams-family.jpg"
+					   alt="Addams Family Panel Recreation"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/school/addams-family.jpg', 'Addams Family Panel Recreation')">
+					<h3>Addams Family Panel Recreation</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/school/paper-plane.jpg"
+					   alt="Paper Plane Infographic"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/school/paper-plane.jpg', 'Paper Plane Infographic')">
+					<h3>Paper Plane Infographic</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-2">
+				<div class="gallery-item">
+					<img
+					   src="../images/school/penguin.jpg"
+					   alt="Playful Orca"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/school/penguin.jpg', 'Playful Orca')">
+					<h3>Playful Orca</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/school/type-anatomy.jpg"
+					   alt="Anatomy of Type"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/school/type-anatomy.jpg', 'Anatomy of Type')">
+					<h3>Anatomy of Type</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/school/hospital-horse.jpg"
+					   alt="Horse in a Hospital"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/school/hospital-horse.jpg', 'Horse in a Hospital')">
+					<h3>Horse in a Hospital</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/school/croissant-box.jpg"
+					   alt="Mini Croissant Packaging"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/school/croissant-box.jpg', 'Mini Croissant Packaging')">
+					<h3>Mini Croissant Packaging</h3>
+				</div>
+			</div>
+            <div class="pure-u-1-4">
+				<div class="gallery-item">
+					<img
+					   src="../images/school/trifold.jpg"
+					   alt="Paul Rand Trifold Brochure"
+					   class="gallery-image"
+					   onclick="openLightbox('../images/school/trifold.jpg', 'Paul Rand Trifold Brochure')">
+					<h3>Paul Rand Trifold Brochure</h3>
+				</div>
+			</div>
+            </section>
+        </main>
         <footer>Aly Ouellette - EVCC - Graphic Design - 2026</footer>
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+
+            <img
+                id="lightboxImage"
+                class="lightbox-content"
+                src=""
+                alt="">
+
+            <div id="lightboxCaption" class="caption"></div>
+        </div>
+        <script>
+            function openLightbox(imagePath, caption) {
+            const lightbox = document.getElementById("lightbox");
+            const image = document.getElementById("lightboxImage");
+            const captionBox = document.getElementById("lightboxCaption");
+
+            image.src = imagePath;
+            image.alt = caption;
+            captionBox.textContent = caption;
+
+            lightbox.style.display = "flex";
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+        </script>  
     </body>
 </html>

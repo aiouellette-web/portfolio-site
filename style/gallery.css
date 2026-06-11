@@ -1,0 +1,56 @@
+.gallery-image {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.02);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lightbox-content {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+.caption {
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.pure-u-1-4, .pure-u-1-2 {
+    text-align: center;
+}
+
+.pure-u-1-4 .gallery-item, .pure-u-1-2 .gallery-item {
+    background-color: rgba(255, 255, 255, 60%);
+    padding: 5px;
+    margin: 5px;
+}

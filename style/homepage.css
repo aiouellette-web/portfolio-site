@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffc0cb;
+  color: darkred;
+}
+
+h2, h3, h4 {
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a, p, label, button, footer {
+    font-family: "Cause", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header, footer {
+  background-color: darkred;
+}
+
+
+header, footer {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header h2, footer, .about, nav li, img {
+  padding: 5px;
+}
+
+h2, footer, a {
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: red;
+  padding: 5px;
+}
+
+.about {
+  background-color: rgba(255, 255, 255, 60%);
+}
+
+.about img {
+  float: left;
+  width: 33%;
+  height:auto;
+  padding-right: 5px;
+}
+
+.about-text {
+  text-indent: 40px;
+  width: 90%;
+  margin: auto;
+}
+
+.contact {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.contact h4 {
+    padding-top: 5px;
+}
+
+form label, form button {
+    display: block;
+}
+
+form button {
+    margin: auto;
+    margin-top: 10px;
+    background-color: darkred;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        text-align: center;
+    }
+
+    .about img {
+    float: none;
+    width: 95%;
+    }
+
+    .pure-u-2-3 {
+    width: 95%
+    }
+
+    .about-text {
+        text-align: left;
+        width: 100%
+    }
+}

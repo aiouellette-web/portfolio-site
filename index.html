@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aly's Portfolio</title>
-        <link href="style/portfolio.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Chango&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+        <link href="style/homepage.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -17,10 +21,41 @@
             </nav>
         </header>
         <main class="about">
-            <h3>About Me</h3>
-            <img src="images/avatar.jpg" alt="cartoon avatar">
-            <p> I’m Aly, and as an Alaskan Native, representation means a lot to me. Even with more nuanced and diverse representation for native tribes in modern media, PNW coastal tribes are highly unrepresented and often lumped in with mainland tribes despite the vast differences in culture. With my comics and animation, I aim to be a voice for the less represented, starting at home with the Tlingit and Haida. Someday, Disney’s “Brother Bear” and the PNW Coastal Native Barbie will not be the only representation we have in pop culture.</p>
-        
+            <h3>About Me</h3>           
+                <img src="images/avatar.jpg" alt="cartoon avatar">
+                <div class="pure-u-2-3">
+                    <p class="about-text"> I’m Aly, and as an Alaskan Native, representation means a lot to me. Even with more nuanced and diverse representation for native tribes in modern media, PNW coastal tribes are highly unrepresented and often lumped in with mainland tribes despite the vast differences in culture. With my comics and animation, I aim to be a voice for the less represented, starting at home with the Tlingit and Haida. Someday, Disney’s “Brother Bear” and the PNW Coastal Native Barbie will not be the only representation we have in pop culture.</p>
+                    <div class="contact">
+                        <h4>Contact Me</h4>
+                        <form
+                        action="https://formspree.io/f/mzdqabop"
+                        method="POST">
+
+                            <label for="name">Name</label>
+                            <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required>
+
+                            <label for="email">Email</label>
+                            <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+
+                            <label for="message">Message</label>
+                            <textarea
+                            id="message"
+                            name="message"
+                            required></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
             <footer>Aly Ouellette - EVCC - Graphic Design - 2026</footer>
         </main>
     </body>
